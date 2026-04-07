@@ -115,6 +115,30 @@ export const testimonials = [
     quote:
       "The collaboration felt like an extension of our internal team. Execution was sharp and thoughtful.",
   },
+  {
+    name: "Mahin Chowdhury",
+    role: "CTO, UrbanCart",
+    quote:
+      "They improved our storefront performance and checkout flow so dramatically that conversion rose within the first sprint.",
+  },
+  {
+    name: "Rachel Turner",
+    role: "Operations Lead, MedAxis",
+    quote:
+      "ITPort brought structure to a messy legacy platform and delivered a modern system our team can confidently scale.",
+  },
+  {
+    name: "Omar Siddiqui",
+    role: "Director, BrightPath Learning",
+    quote:
+      "Communication was clear, delivery was on time, and the final product quality exceeded what we expected.",
+  },
+  {
+    name: "Sabrina Collins",
+    role: "Founder, Nova Studio",
+    quote:
+      "Their design and engineering team understood our brand immediately and turned our vision into a polished digital experience.",
+  },
 ] as const;
 
 export const techStack = [

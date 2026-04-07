@@ -45,6 +45,16 @@ export default function AboutPage() {
           <p className="mt-3 max-w-3xl text-zinc-600 dark:text-zinc-300">
             Our multidisciplinary team includes product strategists, UI/UX designers, frontend specialists, backend engineers, and QA collaborators united by a craftsmanship mindset.
           </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 dark:border-zinc-700 dark:bg-zinc-900/60">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
+              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Founder &amp; CEO</h3>
+            </div>
+            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 dark:border-zinc-700 dark:bg-zinc-900/60">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
+              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Co-Founder &amp; CTO</h3>
+            </div>
+          </div>
         </div>
       </section>
 
