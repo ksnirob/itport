@@ -1,0 +1,9 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0F172A"/>
+  <rect x="90" y="120" width="1020" height="560" rx="32" fill="#0B253A"/>
+  <rect x="150" y="190" width="900" height="36" rx="12" fill="#22D3EE" fill-opacity="0.8"/>
+  <rect x="150" y="250" width="560" height="270" rx="20" fill="#1E3A5F"/>
+  <rect x="735" y="250" width="315" height="120" rx="20" fill="#164E63"/>
+  <rect x="735" y="400" width="315" height="120" rx="20" fill="#1D4ED8"/>
+  <text x="150" y="575" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="44" font-weight="700">FinEdge Dashboard</text>
+</svg>
