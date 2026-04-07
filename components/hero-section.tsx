@@ -1,6 +1,5 @@
 "use client";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -45,14 +44,6 @@ export function HeroSection() {
   }, []);
 
   const slide = heroSlides[activeSlide];
-
-  const goPrev = () => {
-    setActiveSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
-  };
-
-  const goNext = () => {
-    setActiveSlide((prev) => (prev + 1) % heroSlides.length);
-  };
 
   return (
     <section className="relative w-full overflow-hidden px-0">
@@ -128,25 +119,6 @@ export function HeroSection() {
             </div>
           </motion.div>
         </AnimatePresence>
-
-        <div className="absolute bottom-8 right-8 hidden items-center gap-2 lg:flex">
-          <button
-            type="button"
-            aria-label="Previous hero slide"
-            onClick={goPrev}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-rose-400 hover:text-rose-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
-          >
-            <ChevronLeft size={18} />
-          </button>
-          <button
-            type="button"
-            aria-label="Next hero slide"
-            onClick={goNext}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-rose-400 hover:text-rose-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
-          >
-            <ChevronRight size={18} />
-          </button>
-        </div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -5,7 +6,24 @@ export function Footer() {
     <footer className="mt-20 border-t border-zinc-200 bg-white/90 dark:border-zinc-800 dark:bg-zinc-950/90">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-12 sm:px-10 lg:grid-cols-3 lg:px-16">
         <div>
-          <p className="font-display text-2xl font-semibold text-zinc-900 dark:text-white">ITPort</p>
+          <Link href="/" className="inline-flex items-center" aria-label="ITPort home">
+            <Image
+              src="/images/itport-logo.png"
+              alt="ITPort"
+              width={150}
+              height={44}
+              className="block h-11 w-auto dark:hidden"
+              priority
+            />
+            <Image
+              src="/images/itport-logo-dark-mode.png"
+              alt="ITPort"
+              width={150}
+              height={44}
+              className="hidden h-11 w-auto dark:block"
+              priority
+            />
+          </Link>
           <p className="mt-3 max-w-xs text-sm text-zinc-600 dark:text-zinc-300">
             Building scalable digital solutions through modern web and software engineering.
           </p>
