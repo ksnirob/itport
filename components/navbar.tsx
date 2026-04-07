@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navLinks } from "@/lib/data";
+import darkLogo from "@/images/itport-logo-dark-mode.png";
 import logo from "@/images/itport-logo.png";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -17,7 +18,8 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/85 backdrop-blur-2xl dark:border-zinc-800/70 dark:bg-zinc-950/80">
       <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6 sm:px-10 lg:px-16">
         <Link href="/" className="group flex items-center">
-          <Image src={logo} alt="ITPort logo" priority className="h-11 w-auto" />
+          <Image src={logo} alt="ITPort logo" priority className="h-11 w-auto dark:hidden" />
+          <Image src={darkLogo} alt="ITPort logo" priority className="hidden h-11 w-auto dark:block" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

@@ -80,7 +80,7 @@ export function HeroSection() {
               <div className="mt-8 flex items-center gap-3">
                 <Link
                   href="/contact"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-blue-500 px-7 text-sm font-semibold text-white shadow-lg shadow-blue-400/25 transition hover:-translate-y-0.5"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-rose-600 to-red-500 px-7 text-sm font-semibold text-white shadow-lg shadow-rose-400/30 transition hover:-translate-y-0.5"
                 >
                   {slide.cta}
                 </Link>
@@ -94,7 +94,7 @@ export function HeroSection() {
                     aria-label={`Go to hero slide ${index + 1}`}
                     onClick={() => setActiveSlide(index)}
                     className={`h-2.5 rounded-full transition ${
-                      index === activeSlide ? "w-8 bg-indigo-600" : "w-2.5 bg-zinc-300 dark:bg-zinc-700"
+                      index === activeSlide ? "w-8 bg-rose-600" : "w-2.5 bg-zinc-300 dark:bg-zinc-700"
                     }`}
                   />
                 ))}
@@ -134,7 +134,7 @@ export function HeroSection() {
             type="button"
             aria-label="Previous hero slide"
             onClick={goPrev}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-rose-400 hover:text-rose-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
           >
             <ChevronLeft size={18} />
           </button>
@@ -142,7 +142,7 @@ export function HeroSection() {
             type="button"
             aria-label="Next hero slide"
             onClick={goNext}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-white text-zinc-700 transition hover:border-rose-400 hover:text-rose-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
           >
             <ChevronRight size={18} />
           </button>

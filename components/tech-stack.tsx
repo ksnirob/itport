@@ -1,4 +1,25 @@
 import { techStack } from "@/lib/data";
+import { FaAws } from "react-icons/fa";
+import {
+  SiDocker,
+  SiGraphql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
+
+const techIcons: Record<string, React.ComponentType<{ className?: string }>> = {
+  "Next.js": SiNextdotjs,
+  React: SiReact,
+  TypeScript: SiTypescript,
+  "Node.js": SiNodedotjs,
+  PostgreSQL: SiPostgresql,
+  AWS: FaAws,
+  Docker: SiDocker,
+  GraphQL: SiGraphql,
+};
 
 export function TechStack() {
   return (
@@ -11,8 +32,14 @@ export function TechStack() {
           {techStack.map((item) => (
             <div
               key={item}
-              className="rounded-md border border-zinc-200 bg-zinc-50 px-4 py-3 text-center text-sm font-semibold text-zinc-700 transition hover:-translate-y-0.5 hover:border-rose-500/50 hover:text-rose-700 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-200 dark:hover:text-rose-300"
+              className="flex items-center justify-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-4 py-3 text-center text-sm font-semibold text-zinc-700 transition hover:-translate-y-0.5 hover:border-rose-500/50 hover:text-rose-700 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-200 dark:hover:text-rose-300"
             >
+              {techIcons[item]
+                ? (() => {
+                    const Icon = techIcons[item];
+                    return <Icon className="h-4 w-4" />;
+                  })()
+                : null}
               {item}
             </div>
           ))}
