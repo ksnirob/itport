@@ -1,13 +1,15 @@
 import { trustPoints } from "@/lib/data";
+import { SectionHeading } from "./section-heading";
 
 export function WhyChoose() {
   return (
     <section className="px-6 py-16 sm:px-10 lg:px-16">
       <div className="mx-auto max-w-6xl">
-        <h2 className="font-display text-3xl font-semibold text-zinc-900 dark:text-white sm:text-4xl">Why choose ITPort</h2>
-        <p className="mt-3 max-w-3xl text-zinc-600 dark:text-zinc-300">
-          We blend strategic thinking, thoughtful design, and engineering excellence to create products that move businesses forward.
-        </p>
+        <SectionHeading
+          eyebrow="Why ITPort"
+          title="Why choose ITPort"
+          description="We blend strategic thinking, thoughtful design, and engineering excellence to create products that move businesses forward."
+        />
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {trustPoints.map((point) => {

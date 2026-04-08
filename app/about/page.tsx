@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { WhyChoose } from "@/components/why-choose";
+import khaledPhoto from "@/images/ks.jpg";
+import smbPhoto from "@/images/smb.jpeg";
 
 export const metadata: Metadata = {
   title: "About",
@@ -41,18 +44,36 @@ export default function AboutPage() {
 
       <section className="px-6 py-8 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-6xl rounded-3xl border border-zinc-200 bg-white/90 p-8 shadow-md shadow-zinc-900/8 dark:border-zinc-800 dark:bg-zinc-950/70 dark:shadow-black/20 md:p-10">
-          <h2 className="font-display text-3xl font-semibold text-zinc-900 dark:text-white">Team</h2>
-          <p className="mt-3 max-w-3xl text-zinc-600 dark:text-zinc-300">
+          <h2 className="text-center font-display text-3xl font-semibold text-zinc-900 dark:text-white">Our Leadership</h2>
+          <p className="mx-auto mt-3 max-w-3xl text-center text-zinc-600 dark:text-zinc-300">
             Our multidisciplinary team includes product strategists, UI/UX designers, frontend specialists, backend engineers, and QA collaborators united by a craftsmanship mindset.
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 dark:border-zinc-700 dark:bg-zinc-900/60">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
-              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Founder &amp; CEO</h3>
+            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 text-center dark:border-zinc-700 dark:bg-zinc-900/60">
+              <div className="flex h-72 w-full items-center justify-center overflow-hidden rounded-2xl border border-zinc-200/80 bg-gradient-to-b from-zinc-100 to-zinc-200/60 p-3 shadow-inner dark:border-zinc-700 dark:from-zinc-800 dark:to-zinc-900/70">
+                <Image
+                  src={smbPhoto}
+                  alt="SMB Hreepon"
+                  className="h-full w-full rounded-xl object-contain object-center"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
+              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">SMB Hreepon</h3>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Founder &amp; CEO</p>
             </div>
-            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 dark:border-zinc-700 dark:bg-zinc-900/60">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
-              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Co-Founder &amp; CTO</h3>
+            <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 text-center dark:border-zinc-700 dark:bg-zinc-900/60">
+              <div className="flex h-72 w-full items-center justify-center overflow-hidden rounded-2xl border border-zinc-200/80 bg-gradient-to-b from-zinc-100 to-zinc-200/60 p-3 shadow-inner dark:border-zinc-700 dark:from-zinc-800 dark:to-zinc-900/70">
+                <Image
+                  src={khaledPhoto}
+                  alt="Khaled Saifullah"
+                  className="h-full w-full rounded-xl object-contain object-center"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+              </div>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
+              <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Khaled Saifullah</h3>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Co-Founder &amp; CTO</p>
             </div>
           </div>
         </div>

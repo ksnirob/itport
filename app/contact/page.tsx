@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
@@ -18,21 +19,40 @@ export default function ContactPage() {
           </p>
 
           <div className="mt-8 space-y-3 text-sm text-zinc-700 dark:text-zinc-200">
-            <p>
-              <span className="font-semibold">Email:</span> hello@itport.dev
+            <p className="flex items-start gap-2">
+              <Mail size={16} className="mt-0.5 shrink-0 text-rose-500" aria-hidden="true" />
+              <span>
+                <span className="font-semibold">Email:</span>{" "}
+                <a href="mailto:info@itport.com.bd" className="transition hover:text-rose-700 dark:hover:text-rose-300">
+                  info@itport.com.bd
+                </a>
+              </span>
             </p>
-            <p>
-              <span className="font-semibold">Phone:</span> +1 (555) 402-1299
+            <p className="flex items-start gap-2">
+              <Phone size={16} className="mt-0.5 shrink-0 text-rose-500" aria-hidden="true" />
+              <span>
+                <span className="font-semibold">Phone:</span>{" "}
+                <a href="tel:+8801857901880" className="transition hover:text-rose-700 dark:hover:text-rose-300">
+                  +8801857901880
+                </a>
+                {", "}
+                <a href="tel:+8801830681074" className="transition hover:text-rose-700 dark:hover:text-rose-300">
+                  +8801830681074
+                </a>
+              </span>
             </p>
-            <p>
-              <span className="font-semibold">Location:</span> Remote-first, global delivery
+            <p className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5 shrink-0 text-rose-500" aria-hidden="true" />
+              <span>
+                <span className="font-semibold">Location:</span> Confidence Center 6A, Kha-9, Progoti Sharani, Shahjadpur, Gulshan, Building No: 1, Dhaka-1212
+              </span>
             </p>
           </div>
 
           <div className="mt-8 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800" aria-label="Map placeholder showing service coverage">
             <iframe
               title="ITPort location map"
-              src="https://maps.google.com/maps?q=Dhaka&t=&z=10&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Confidence%20Center%206A%2C%20Kha-9%2C%20Progoti%20Sharani%2C%20Shahjadpur%2C%20Gulshan%2C%20Dhaka-1212&t=&z=16&ie=UTF8&iwloc=&output=embed"
               className="h-64 w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
