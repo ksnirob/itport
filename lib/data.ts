@@ -10,6 +10,9 @@ import {
   Sparkles,
   Wrench,
 } from "lucide-react";
+import patriotProject from "@/images/patriot.png";
+import sixpackProject from "@/images/sixpack.png";
+import thConsultingProject from "@/images/thconsulting.png";
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -59,40 +62,25 @@ export const services = [
 
 export const featuredProjects = [
   {
-    title: "FinEdge Dashboard",
-    image: "/projects/project-1.svg",
-    techStack: ["Next.js", "TypeScript", "PostgreSQL"],
-    description: "A real-time financial analytics platform for enterprise decision-making.",
+    title: "Patriot Group BD",
+    image: patriotProject,
+    techStack: ["Corporate Website", "Garments Industry"],
+    description: "100% export-oriented woven and knit garments manufacturer delivering quality at scale.",
+    liveUrl: "https://patriotgroupbd.com",
   },
   {
-    title: "CareFlow Portal",
-    image: "/projects/project-2.svg",
-    techStack: ["React", "Node.js", "MongoDB"],
-    description: "A patient engagement portal with secure messaging and booking workflows.",
+    title: "TH Consulting",
+    image: thConsultingProject,
+    techStack: ["Business Consulting", "Market Entry"],
+    description: "Helping global companies enter and grow in Kenya and East Africa through expert strategy.",
+    liveUrl: "https://thconsulting.ke",
   },
   {
-    title: "Retail Nexus",
-    image: "/projects/project-3.svg",
-    techStack: ["Next.js", "Prisma", "Stripe"],
-    description: "A headless commerce experience with personalized storefronts and checkout.",
-  },
-  {
-    title: "OpsPilot Suite",
-    image: "/projects/project-4.svg",
-    techStack: ["Vue", "NestJS", "Redis"],
-    description: "An operations automation suite that streamlined internal logistics by 40%.",
-  },
-  {
-    title: "LegalSync",
-    image: "/projects/project-5.svg",
-    techStack: ["React", "Go", "GraphQL"],
-    description: "A legal workflow product centralizing document lifecycle and approvals.",
-  },
-  {
-    title: "PulseTrack IoT",
-    image: "/projects/project-6.svg",
-    techStack: ["Svelte", "Python", "Timescale"],
-    description: "An IoT monitoring dashboard with anomaly detection and alert orchestration.",
+    title: "Six Pack Fitness",
+    image: sixpackProject,
+    techStack: ["Gym Website", "Fitness Brand"],
+    description: "A modern gym website built to promote training programs, memberships, and brand growth.",
+    liveUrl: "http://sixpack-fitness.com",
   },
 ] as const;
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { featuredProjects } from "@/lib/data";
 import { SectionHeading } from "./section-heading";
 
@@ -39,6 +40,16 @@ export function ProjectGrid({ limit, showHeading = true }: ProjectGridProps) {
             <div className="p-5">
               <h3 className="font-display text-xl font-semibold text-zinc-900 transition group-hover:text-rose-700 dark:text-white dark:group-hover:text-rose-300">{project.title}</h3>
               <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-300">{project.description}</p>
+              {"liveUrl" in project ? (
+                <Link
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-sm font-semibold text-rose-700 transition hover:text-rose-800 dark:text-rose-300 dark:hover:text-rose-200"
+                >
+                  Visit Website
+                </Link>
+              ) : null}
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.techStack.map((item) => (
                   <span
