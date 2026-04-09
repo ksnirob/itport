@@ -60,7 +60,7 @@ export default function AboutPage() {
               </div>
               <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
               <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">SMB Hreepon</h3>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Founder &amp; CEO</p>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Co-Founder &amp; CEO</p>
             </div>
             <div className="rounded-2xl border border-zinc-200 bg-white/80 p-5 text-center dark:border-zinc-700 dark:bg-zinc-900/60">
               <div className="flex h-72 w-full items-center justify-center overflow-hidden rounded-2xl border border-zinc-200/80 bg-gradient-to-b from-zinc-100 to-zinc-200/60 p-3 shadow-inner dark:border-zinc-700 dark:from-zinc-800 dark:to-zinc-900/70">
