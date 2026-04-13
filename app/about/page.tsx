@@ -73,7 +73,7 @@ export default function AboutPage() {
               </div>
               <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-300">Leadership</p>
               <h3 className="mt-2 font-display text-xl font-semibold text-zinc-900 dark:text-white">Khaled Saifullah</h3>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">CTO (Texchnology)</p>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">CTO (Technology)</p>
             </div>
           </div>
         </div>
